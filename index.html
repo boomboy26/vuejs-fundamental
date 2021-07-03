@@ -8,10 +8,15 @@
     <title>Vue JS Fundamental</title>
   </head>
   <body>
-    <div id="app">
-      <h1>{{nation}} Year {{year}}</h1>
-      <h2>Population {{population}}</h2>
-      <button v-on:click="getNation">click</button>
+    <div id="app" class="container">
+      <h1>Generate USA Population API Vue JS</h1>
+
+      <button v-on:click="getNation">Generate</button>
+      <div class="card">
+        <h1>Nation : {{nation ? nation : 'Waiting generate' }}</h1>
+        <h2>Year : {{year ? year : 'Waiting generate' }}</h2>
+        <h2>Population : {{population}}</h2>
+      </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>

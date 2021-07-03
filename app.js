@@ -1,20 +1,19 @@
 const app = Vue.createApp({
   // template: '<h1>Hello {{user}}</h1>',
   data() {
-    return { nation: 'USO', year: '2010', population: 3222112 };
+    return { nation: '', year: '', population: 0 };
   },
   methods: {
-    getNation() {
-      console.log(this.nation);
+    async getNation() {
+      const res = await fetch(
+        'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
+      );
+      const { data } = await res.json();
+      this.nation = data[0].Nation;
+      this.year = data[0].Year;
+      this.population = data[0].Population.toLocaleString();
     },
   },
 });
-
-/*
-data
-method 
-image 
-display data
-*/
 
 app.mount('#app');

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 35%;
+  margin: auto;
+  border: 1px solid coral;
+  padding: 1rem;
+}
+button {
+  padding: 12px 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: aquamarine;
+}
