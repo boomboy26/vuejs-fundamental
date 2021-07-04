@@ -1,24 +1,14 @@
 # vuejs-fundamental
 
+<img  src="https://vuejs.org/images/logo.svg" width="50" />
+
 ## Project setup
+
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
 npm run build
-```
-
-### Lints and fixes files
-```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### [CDN VUE](vue_cdn)
