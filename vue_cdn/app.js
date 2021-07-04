@@ -1,12 +1,12 @@
 const app = Vue.createApp({
   // template: '<h1>Hello {{user}}</h1>',
   data() {
-    return { nation: '', year: '', population: 0 };
+    return { nation: "", year: "", population: 0 };
   },
   methods: {
     async getNation() {
       const res = await fetch(
-        'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
+        "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
       );
       const { data } = await res.json();
       this.nation = data[0].Nation;
@@ -16,4 +16,4 @@ const app = Vue.createApp({
   },
 });
 
-app.mount('#app');
+app.mount("#app");
