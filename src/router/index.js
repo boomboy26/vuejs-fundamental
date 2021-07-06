@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import CounterApp from '../views/CounterApp';
 import FormSubmit from '../views/FormSubmit';
+import SimpleTodo from '../views/SimpleTodo';
 const routes = [
   {
     path: '/',
@@ -26,6 +27,11 @@ const routes = [
     path: '/form',
     name: 'FormSubmit',
     component: FormSubmit,
+  },
+  {
+    path: '/simpletodo',
+    name: 'SimpleTodo',
+    component: SimpleTodo,
   },
 ];
 

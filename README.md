@@ -29,10 +29,10 @@ Child to Parent use emit
 this.$emit('customerEvent', data);
 ```
 
-Call child function use $ref
+Call child method use $ref
 
-```
-<Child ref="refName" />
+```javascript
+<Child ref='refName' />;
 
-this.$ref.refName.methodName()
+this.$ref.refName.methodName();
 ```
