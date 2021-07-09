@@ -36,3 +36,47 @@ Call child method use $ref
 
 this.$ref.refName.methodName();
 ```
+
+### Methods vs Computed Vs watch
+
+Method for Event , bind data , Rerender every time update
+Computed for rerender when dependency update , bind data
+Watch good for check varible change condition
+
+#### Vue Summary
+
+```
+<p v-if="inStock">{{ product }}</p>
+<p v-else-if="onSale">...</p>
+<p v-else>...</p>
+
+<div :class="{ active: isActive }">
+<input v-model="firstName" >
+<button @click="onClickEvent">
+<form @submit.prevent="onSumbit">
+<li v-for="item in items"
+    :key="item.id">
+  {{ item }}
+</li>
+<li v-for="(item, index) in items">
+```
+
+#### Practice app
+
+<img  src="./src/assets/counter.png" width="200" />
+<img  src="./src/assets/form.png" width="200" />
+<img  src="./src/assets/todo.png" width="200" />
+<img  src="./src/assets/monster.png" width="200" />
+
+### Vue Life Cycle
+
+| Life Cycle    | Description                                  |
+| ------------- | -------------------------------------------- |
+| beforeCreate  | After the instance has been initialized      |
+| created After | the instance is created                      |
+| beforeMount   | Before the first render                      |
+| mounted       | After the instance has been mounted          |
+| beforeUpdate  | When data changes, before the DOM is patched |
+| updated       | After a data change                          |
+| beforeDestroy | Before the instance is destroyed             |
+| destroyed     | After a Vue instance has been destroyed      |
