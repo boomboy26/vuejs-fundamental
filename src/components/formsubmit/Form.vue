@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h4>Form Child</h4>
-    <form action="" @submit="onSubmit">
+    <form action="" @submit.prevent="onSubmit">
       <label for="">Name</label>
       <input type="text" name="name" v-model="name" />
       <label for=""> Email</label>
@@ -16,8 +16,8 @@ export default {
   name: 'Form',
   emits: ['onSubmitForm'],
   methods: {
-    onSubmit(e) {
-      e.preventDefault();
+    onSubmit() {
+      // e.preventDefault();
       // console.log(this.name, this.email);
       this.$emit('onSubmitForm', { name: this.name, email: this.email });
       (this.name = ''), (this.email = '');

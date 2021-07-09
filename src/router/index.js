@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import CounterApp from '../views/CounterApp';
 import FormSubmit from '../views/FormSubmit';
 import SimpleTodo from '../views/SimpleTodo';
+import MonsterSlayer from '../views/MonsterSlayer';
 const routes = [
   {
     path: '/',
@@ -32,6 +33,11 @@ const routes = [
     path: '/simpletodo',
     name: 'SimpleTodo',
     component: SimpleTodo,
+  },
+  {
+    path: '/monster',
+    name: 'MonsterSlayer',
+    component: MonsterSlayer,
   },
 ];
 

@@ -3,7 +3,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/counterapp">CounterApp</router-link> |
     <router-link to="/form">Form</router-link> |
-    <router-link to="/simpletodo">simpletodo</router-link>
+    <router-link to="/simpletodo">Simpletodo</router-link> |
+    <router-link to="/monster">MonsterSlayer</router-link>
   </div>
   <router-view />
 </template>
